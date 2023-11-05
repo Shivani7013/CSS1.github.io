@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Academy</title>
+    <link rel="icon" href="tap logo 2.png">
+    <style>
+    .header {
+        background-color: #0058A6;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header img {
+        width: 30px;
+        height: 30px;
+    }
+    .contact-info {
+        display: flex;
+        align-items:left;
+    }
+    .contact-info img {
+        width: 20px;
+        height: 20px;
+        
+        margin-right: 6%;
+    
+    }
+    .contact-info a {
+        margin-left: 80%;
+        text-decoration: none;
+        color: white;
+        margin-right: 0%;
+    }
+    
+    .main-logo {
+        text-align: center;
+    }
+    .main-logo img {
+        width: 120px;
+        height: 80px;
+        margin-right: 80%;
+        margin-top: 3%;
+    }
+    .main-nav {
+        text-align: center;
+        background-color: white;
+        padding-bottom: -5%;
+       
+    }
+    .main-nav a {
+        text-decoration: none;
+        color: #0058A6;
+        margin: 0 10px;
+    }
+    .try-for-free-button {
+        background-color: #0058A6; 
+         color: white; 
+         padding: 10px 20px; 
+         border: none; 
+         text-decoration: none; 
+         font-size: 16px; 
+         cursor: pointer; 
+       }
+      .try-for-free-button:hover {
+              background-color: #003F75;     
+                    }
+                    fieldset
+                    {
+                        background-color: #003F75;
+                    }
+        h1{
+            color: #0058A6;
+            text-align: center;
+        }
+        p
+        {
+            text-align: center;
+        }
+        .scrollig-container {
+           overflow: hidden;
+          position: relative;
+         width: 300px; 
+        height: 300px; 
+       }
+
+    .image-gallery {
+    display: flex;
+    animation: scroll 10s linear infinite; 
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.footer {
+            background-color:grey;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-info">
+            <img src="call logo.png" alt="Call Logo">
+            08069878321
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:hello@thetapacademy.com">
+                <img src="mail logo.jpg" alt="Mail Logo">
+            </a>hello@thetapacademy.com
+            <a href="https://www.youtube.com/tapacademy">
+                <img src="utube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://www.instagram.com/tapacademyonline/">
+                <img src="insta logo.png" alt="Instagram Logo">
+            </a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="main-logo">
+            <a href="https://thetapacademy.com/">
+                <img src="tap logo.png" alt="Tap Academy Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="student_review.html">Student Review</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="placement.html">Placement</a>
+            <a href="contact.html">Contact Us</a>
+            <button class="try-for-free-button">Try for Free</button>
+            
+        </nav>
+    </div>
+    <fieldset >
+        <table >
+            <tr>
+                <td align="center">
+                    <h1>Placement cell</h1>
+                    <p>Tap Academy provides Placement Opportunity to every student who enrolls <br>
+                         in the eligible course. Here is the list of all our alumni students 
+                    </p>                     
+                </td>
+                <td>
+                    <img src="placement cellll.svg" alt="" height="300" width="300">
+
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <h1>
+        Placement <i>Drives </i> conducted at Tap Academy </h1>
+        <p>For every student enrolled in the courses we provide unlimited placement 
+             opportunities. Here are the few companies that  <br>
+             participated in our drives. 
+        </p>
+        <div class="scrolling-container">
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="image-gallery">
+                <img src="D11.webp" alt="">
+                <img src="D12.webp" alt="">
+                <img src="D13.webp" alt="">
+                <img src="D14.webp" alt="">
+                <img src="D15.webp" alt="">
+                <img src="D16.webp" alt="">
+                <img src="D17.webp" alt="">
+                <img src="D18.webp" alt="">
+            </div>
+            <button class="arrow right-arrow">&gt;</button>
+        </div>
+        <div class="scrolling-container">
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="image-gallery">
+            <img src="D21.webp" alt="">
+            <img src="D22.webp" alt="">
+            <img src="D23.webp" alt="">
+            <img src="D24.webp" alt="">
+            <img src="D25.webp" alt="">
+            <img src="D26.webp" alt="">
+            <img src="D27.webp" alt="">
+            <img src="D28.webp" alt="">
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+        </div>
+        <div class="scrolling-container">
+            <button class="arrow left-arrow">&lt;</button>
+            <div class="image-gallery">
+            <img src="d31.webp" alt="">
+            <img src="D32.webp" alt="">
+            <img src="D33.webp" alt="">
+            <img src="D34.webp" alt="">
+            <img src="D35.webp" alt="">
+            <img src="D36.webp" alt="">
+            <img src="D37.webp" alt="">
+        </div>
+        <button class="arrow right-arrow">&gt;</button>
+        </div>
+       
+        <table>
+            <tr>
+                <td>
+                    <img src="img1.jpg" alt="">
+                </td>
+                <td>
+                    <img src="img2.jpg" alt="">
+                </td>
+                <td>
+                    <img src="img3.jpg" alt="">
+                </td>
+                <td>
+                    <img src="img4.jpg" alt="">
+                </td>
+                <td>
+                    <img src="img5.jpg" alt="">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <img src="p1.jpg" alt="">
+                </td>
+                <td><img src="p2.jpg" alt=""></td>
+                <td><img src="p3.jpg" alt=""></td>
+                <td><img src="p4.jpg" alt=""></td>
+                <td><img src="p5.jpg" alt=""></td>
+                
+            </tr>
+            <br>
+            <tr>
+                <td><img src="p6.jpg" alt=""></td>
+                <td><img src="p7.jpg" alt=""></td>
+                <td><img src="p8.jpg" alt=""></td>
+                <td><img src="p9.jpg" alt=""></td>
+                <td><img src="p10.jpg" alt=""></td>
+            </tr>
+        </table> 
+        <br><br>
+        <fieldset>
+            <footer class="footer">
+                            <div align="left" style="display:inline-block; width:32%;">
+                            
+                                <div align="left" style="display:inline-block; width:32%;">
+                                    <h2>Tap Academy</h2>
+                            <p>An Online Skilling Organization</p>
+                            <a href="https://maps.app.goo.gl/CMA2NAppQoHopnwA6">
+                                <img src="Map_pin_icon_green.svg.png" alt="" height="10" width="10">
+                            </a>BTM
+                            <br>
+                            <a href="https://maps.app.goo.gl/RkK26t43wvQDCd1n9">
+                                <img src="Map_pin_icon_green.svg.png" alt="" height="10" width="10">
+                            </a>Rajajinagar
+                            <br>
+                            <a href="tel:08069878321">
+                                <img src="telephone.png" alt="Call Logo" height="10" width="10"> 
+                            </a> 08069878321
+                    
+                            <br>
+                            <a href="mailto:hello@thetapacademy.com">
+                                <img src="mail logo.jpg" alt="" height="10" width="10">
+                            </a>hello@thetapacademy.com
+                            </div>
+                            </div>
+                            <div align="center" style="display:inline-block; width:32%;">
+                                
+                                <div align="center" style="display:inline-block; width:32%;">
+                                    <h3>Useful Links</h3>
+                                    
+                                       <a href="index.html">Home</a><br>
+                                       <a href="course.html">Course</a><br>
+                                       <a href="student_review.html">Student Reviews</a><br>
+                                       <a href="Blogs.html">Blogs</a><br>
+                                       <a href="placement.html">Placements</a><br>
+                                       <a href="contact.html">Contact Us</a><br>
+                               </div>
+                            </div>
+                            <div align="right" style="display:inline-block; width:32%;">
+                                
+                                <div align="right" style="display:inline-block; width:32%;">
+                                    <h3>Policies</h3>
+                                    <p>Privacy Policy</p>
+                                    <p>Terms & Conditions</p>
+                                    <p>Refunds / Cancellations</p>
+                                </div>
+                             </div>
+                            <div style="text-align: center; margin-top: 20px;">
+                        
+                                <div style="text-align: center; margin-top: 20px;">
+                                    <a href="https://www.youtube.com/tapacademy">
+                                        <img src="utube.png" alt="YouTube Logo" height="40" width="40">
+                                   </a>
+                                   <a href="https://www.instagram.com/tapacademyonline/">
+                                       <img src="insta logo.png" alt="" height="40" width="40">
+                                   </a>
+                                   <a href="https://www.facebook.com/TapAcademyOnline/">
+                                       <img src="facebook.jpg" alt="" width="40" height="40">
+                                   </a>
+                                   <a href="https://www.linkedin.com/company/thetapacademy/">
+                                       <img src="linkedin.jpg" alt="" width="40" height="40">
+                                   </a>
+                               </div>
+    
+                            </div>
+                        </footer>
+                        <p align="right">Copyright © 2021 | Tap Academy</p>
+            </body>
+        </html>
