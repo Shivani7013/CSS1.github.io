@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Academy</title>
+    <link rel="icon" href="tap logo 2.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #0058A6;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 30px;
+            height: 30px;
+        }
+        .contact-info {
+            display: flex;
+            align-items:left;
+        }
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            
+            margin-right: 6%;
+        
+        }
+        .contact-info a {
+            margin-left: 80%;
+            text-decoration: none;
+            color: white;
+            margin-right: 0%;
+        }
+        
+        .main-logo {
+            text-align: center;
+        }
+        .main-logo img {
+            width: 120px;
+            height: 80px;
+            margin-right: 80%;
+            margin-top: 3%;
+        }
+        .main-nav {
+            text-align: center;
+            background-color: white;
+            padding-bottom: -5%;
+           
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #0058A6;
+            margin: 0 10px;
+        }
+        .try-for-free-button {
+            background-color: #0058A6; 
+             color: white; 
+             padding: 10px 20px; 
+             border: none; 
+             text-decoration: none; 
+             font-size: 16px; 
+             cursor: pointer; 
+           }
+
+          .try-for-free-button:hover {
+                  background-color: #003F75;             }
+
+        
+        .content {
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start;
+          border: 1px solid black;
+          height: 100%;
+          width: 90%;
+        }
+
+       .content section {
+           flex: 1; 
+            padding: 0 10px; 
+           text-align: left; 
+         }
+         .content section a
+         {
+            margin-right: 20px;
+         }
+
+        .content aside {
+             flex: 1; 
+             text-align: right; 
+             height:300px;
+             width:350px
+
+}
+        .content {
+               padding: 20px;
+            text-align: center;
+        }
+        .content a{
+            text-decoration: none;
+        }
+        .content h1 {
+            color: #005b41;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            border: 3px;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid black;
+            margin-right: 3px;
+        }
+        .feature img {
+            width: 100%;
+            max-width: 200px;
+            
+        }
+        .video-container {
+           display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-top: 20px;
+        }
+
+        .video-container iframe {
+           width: 48%; 
+           margin-bottom: 10px;
+         }
+         #ar-training h1{
+            text-align: center;
+         }
+         .container h1{
+            text-align: center;
+            
+         }
+         .container p{
+            text-align: center;
+         }
+         .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+        }
+
+       .marquee img {
+            display: inline-block;
+            margin-right: 20px; 
+            animation: marquee 10s linear infinite;         }
+
+        @keyframes marquee {
+         0% {
+             transform: translateX(100%);
+            }
+        100% {
+               transform: translateX(-100%);
+             }
+            }
+             .course-fieldset {
+                   border: 1px solid #ccc;
+                   padding: 20px;
+               }
+
+              table {
+                  width: 100%;
+                }
+                h1 {
+                     font-size: 24px;
+                   }
+
+                 ul {
+                       list-style-type: disc;
+                        margin-left: 20px;
+                    }
+
+                img {
+                       max-width: 100%;
+                       height: auto;
+                    } 
+
+
+        .footer {
+            background-color: #0058A6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-info">
+            <img src="call logo.png" alt="Call Logo">
+            08069878321
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:hello@thetapacademy.com">
+                <img src="mail logo.jpg" alt="Mail Logo">
+            </a>hello@thetapacademy.com
+            <a href="https://www.youtube.com/tapacademy">
+                <img src="utube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://www.instagram.com/tapacademyonline/">
+                <img src="insta logo.png" alt="Instagram Logo">
+            </a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="main-logo">
+            <a href="https://thetapacademy.com/">
+                <img src="tap logo.png" alt="Tap Academy Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="student_review.html">Student Review</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="placement.html">Placement</a>
+            <a href="contact.html">Contact Us</a>
+            <button>Try for Free</button>            
+        </nav>
+    </div>
+    
+    <div class="content">
+        <section><h1 >#Techtraining</h1>
+        <h2>Gamify Learning, Simplify Employment</h2>
+        <p >TAP Academy is your one-stop destination to upskill your coding skills or reskill yourself. 
+            Join over 35,000 students who trust us all over India.</p>
+            <a href="Attend_a_free_demo.html">Attend a free demo</a>
+            <a href="watch free demo.mp4.mp4">Watch free Demo</a>              
+
+        </section>
+            <aside>
+                <video src="Main_video.mp4" controls width="500" height="300"></video>
+            </aside>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="phone&laptop.jpg" alt="Personalized course curriculum">
+            <h3>Personalized course curriculum</h3>
+            <p>We offer individual attention to choose the right course for you.</p>
+        </div>
+        <div class ="feature">
+            <img src="placement_imageeee.jpg" alt="Placement Opportunity">
+            <h3>Placement Opportunity</h3>
+            <p>Get unlimited placement opportunities until you get placed.</p>
+        </div>
+        <div class="feature">
+            <img src="mentorship1.jpg" alt="1:1 Mentorship" height="270" width="400">
+            <h3>1:1 Mentorship</h3>
+            <p>Our pool of mentors ensures your every doubt is addressed immediately.</p>
+        </div>
+    </div>
+        <section id="ar-training" class="section">
+            <h1>Experience the <i>Augmented Reality</i> Tech Training</h1>
+        <div class="container">
+            <p>One of the Unique Features of Tap Academy is the use of Augmented Reality in our training. Through this concept, visualize using cutting-edge animation to ensure an in-depth understanding of the concepts and experience the pure joy of learning as well as upskilling your coding skills.</p>
+        </div>
+        
+        <div class="video-container">
+            <iframe title="Video 1" src="https://player.vimeo.com/video/694365015?h=ab68c6377f" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe title="Video 2" src="https://player.vimeo.com/video/636154101?h=89dff778c4" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+    
+        <div class="video-container">
+            <iframe title="Video 3" src="https://player.vimeo.com/video/638183143?h=33bbbfd0ed" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe title="Video 4" src="https://player.vimeo.com/video/682703363?h=78aa9762ff" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="student-transformation" class="section">
+        <div class="container">
+            <h1 class="section-title">Tap Academy Students <i>Transformation</i></h1>
+            <p>Our complete online training has made students learn to code anytime, anywhere, enhance their coding skills, and get placed in various Companies. Here are our few students placed at various companies:</p>
+            <div class="marquee">
+                    <img src="img1.jpg" alt="">
+                    <img src="img2.jpg" alt="">
+                    <img src="img3.jpg" alt="">
+                    <img src="img4.jpg" alt="">
+                    <img src="img5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="student-placement" class="section">
+        <div class="container">
+            <h1 class="section-title">Our <i>Students</i> placed in</h1>
+            <p>Tap Academy presents Unlimited  Job guarantee Placements
+                for every student who enroll. More than 11,000+ students have got <br> exposure
+                 to AR Tech Training. Explore our Courses to know more.</p>
+                 <div class="marquee">
+                    <img src="05-accenture.png.webp" alt="">
+                    <img src="15-cisco.png.webp" alt="">
+                    <img src="14-tcs.png.webp" alt="">
+                    <img src="13-intel.png.webp" alt="">
+                    <img src="07-virtusa.png.webp" alt="">
+                    <img src="04-mindtree.png.webp" alt="">
+                    <img src="03-concentrix.png.webp" alt="">
+                    <img src="02-capgemini.png.webp" alt="">
+                 </div>
+        </div>
+    </section>
+    <section id="Corporate">
+        <div class="container">
+            <h1 class="section-title">Campus to <i>Corporate </i>program</h1>
+            <p>Tap Academy is a skilling organization that trains students to sync with current IT needs. Our Specialized Job Guarantee Courses <br>
+                transform from campus students to corporate employee by enhancing their coding skills.    
+            </p>
+        </div>
+    </section>
+    <fieldset class="course-fieldset">
+        <table>
+            <tr>
+                <td>
+                    <h1>Full Stack Development <br><i>Courses</i></h1>
+                    <p>Tap Academy offers a 90-day intensive certification training program exclusively for final year students and tech graduates.</p>
+                    <ul>
+                        <li>A Full-stack developer is a person who has great knowledge of the latest and upcoming trends of web development with complete knowledge of front-end and back-end web development.</li>
+                        <li>According to research, there is a 20% growth in demand for Full-stack developers compared to the last couple of years.</li>
+                        <li>Full-stack developers are experts with diverse knowledge and skill sets, leading to high and decent salary structures.</li>
+                        <li>The IT industry is looking for skilled candidates who can work efficiently with the latest tech (Full stack) and solve complex problems.</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="html css.png" alt="HTML and CSS Image">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <section id="Programs">
+        <div class="container">
+            <h1 class="section-title">Our career Programs</h1>
+            <p>Explore our online courses designed by experts which offer students support, career counseling <br>
+             & Certification</p>
+             <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="M1.svg" alt="" height="270" width="500">
+                            <h1>Data Structures & Algorithms</h1>
+                            <p>
+                                In this course, you will look at the core data <br> structures and algorithms that are the building <br> blocks 
+                                of applications everywhere. You will learn <br>how they work and see real-world.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="m2.png" alt="">
+                            <h1>Java Full Stack Development Training
+                            </h1>
+                            <p>Become a Full Stack Developer in 90 days with <br>our AR Tech Training + 100% Placement Support. <br>
+                                 Full stack Development is one of the Top in- <br>demand skill to get
+                                  placed in IT Industry</p>       
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </section>
+    <h1 align="center">Why to <i>Choose Us</i></h1>
+        <p align="center">Tap Academy's vision is to upskill technical graduates into software employees.</p>
+        <table>
+            <tr>
+                <td><fieldset>
+                    <h2>Dedicated career Support</h2>
+                        <p>Get trained on soft skills,Mock interviews,Resume Bilding,Linkedin <br>
+                                     profile optimizing,Email etiquee &much more.</p>
+                </fieldset></td>
+                <td>
+                    <fieldset>
+                        <h2>Augmented Reality Based Learning</h2>
+                                <p>Attend one of the kind Augmented Reality based live-classes <br>
+                                    & solve interview coding questions.
+                                </p>
+                                
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <h2>24*7 Learning Management System</h2>
+                        <p>Wholesale learning experience with 500 hours of Quality Training <br>
+                             and 200+ hands on coading questions</p>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <h2>Unlimited Placement Opportunities</h2>
+                        <p>we promise to provide you with a handful of placements <br>opportunities
+                             till you have an offer letter in hand</p>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <fieldset>
+        <footer class="footer">
+                        <div align="left" style="display:inline-block; width:32%;">
+                        
+                            <div align="left" style="display:inline-block; width:32%;">
+                                <h2>Tap Academy</h2>
+                        <p>An Online Skilling Organization</p>
+                        <a href="https://maps.app.goo.gl/CMA2NAppQoHopnwA6">
+                            <img src="Map_pin_icon_green.svg.png" alt="" height="10" width="10">
+                        </a>BTM
+                        <br>
+                        <a href="https://maps.app.goo.gl/RkK26t43wvQDCd1n9">
+                            <img src="Map_pin_icon_green.svg.png" alt="" height="10" width="10">
+                        </a>Rajajinagar
+                        <br>
+                        <a href="tel:08069878321">
+                            <img src="telephone.png" alt="Call Logo" height="10" width="10"> 
+                        </a> 08069878321
+                
+                        <br>
+                        <a href="mailto:hello@thetapacademy.com">
+                            <img src="mail logo.jpg" alt="" height="10" width="10">
+                        </a> hello@thetapacademy.com
+                        </div>
+                        </div>
+                        <div align="center" style="display:inline-block; width:32%;">
+                            
+                            <div align="center" style="display:inline-block; width:32%;">
+                                <h3>Useful Links</h3>
+                                
+                                   <a href="index.html">Home</a><br>
+                                   <a href="course.html">Course</a><br>
+                                   <a href="student_review.html">Student Reviews</a><br>
+                                   <a href="Blogs.html">Blogs</a><br>
+                                   <a href="placement.html">Placements</a><br>
+                                   <a href="contact.html">Contact Us</a><br>
+                           </div>
+                        </div>
+                        <div align="right" style="display:inline-block; width:32%;">
+                            
+                            <div align="right" style="display:inline-block; width:32%;">
+                                <h3>Policies</h3>
+                                <p>Privacy Policy</p>
+                                <p>Terms & Conditions</p>
+                                <p>Refunds / Cancellations</p>
+                            </div>
+                         </div>
+                        <div style="text-align: center; margin-top: 20px;">
+                    
+                            <div style="text-align: center; margin-top: 20px;">
+                                <a href="https://www.youtube.com/tapacademy">
+                                    <img src="utube.png" alt="YouTube Logo" height="40" width="40">
+                               </a>
+                               <a href="https://www.instagram.com/tapacademyonline/">
+                                   <img src="insta logo.png" alt="" height="40" width="40">
+                               </a>
+                               <a href="https://www.facebook.com/TapAcademyOnline/">
+                                   <img src="facebook.jpg" alt="" width="40" height="40">
+                               </a>
+                               <a href="https://www.linkedin.com/company/thetapacademy/">
+                                   <img src="linkedin.jpg" alt="" width="40" height="40">
+                               </a>
+                           </div>
+
+                        </div>
+                    </footer>
+                    <p>  © 2021 | Tap Academy</p>
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="tap logo 2.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #0058A6;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 30px;
+            height: 30px;
+        }
+        .contact-info {
+            display: flex;
+            align-items:left;
+        }
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            
+            margin-right: 6%;
+        
+        }
+        .contact-info a {
+            margin-left: 80%;
+            text-decoration: none;
+            color: white;
+            margin-right: 0%;
+        }
+        
+        .main-logo {
+            text-align: center;
+        }
+        .main-logo img {
+            width: 120px;
+            height: 80px;
+            margin-right: 80%;
+            margin-top: 3%;
+        }
+        .main-nav {
+            text-align: center;
+            background-color: white;
+            padding-bottom: -5%;
+           
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #0058A6;
+            margin: 0 10px;
+        }
+        .try-for-free-button {
+            background-color: #0058A6; 
+             color: white; 
+             padding: 10px 20px; 
+             border: none; 
+             text-decoration: none; 
+             font-size: 16px; 
+             cursor: pointer; 
+           }
+
+          .try-for-free-button:hover {
+                  background-color: #003F75;    
+          }
+          .table-with-space {
+         width: 100%; 
+         margin: 0 auto; 
+         padding: 0 20px;
+        }
+        .content {
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start;
+          border: 2px solid black;
+          height: 100%;
+          width: 98%;
+        }
+
+       .content section {
+           flex: 1; 
+            padding: 0 10px; 
+           text-align: left; 
+         }
+         .content section a
+         {
+            margin-right: 20px;
+         }
+
+        .content aside {
+             flex: 1; 
+             text-align: right; 
+             height: 350px;
+             width:350px
+
+         }
+        .content a{
+            text-decoration: none;
+        }
+        .content h1 {
+            color: #005b41;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content fieldset
+        {
+            background-color: antiquewhite;
+        }
+        .featuree-section fieldset
+        {
+            background-color: white;
+            
+        }
+        .featuree-section img{
+            height: 50%;
+            width: 70%;
+        }
+        .feature
+        {
+            border:2px solid black;
+        }        .job-details {
+            border: 2px solid #0058A6; 
+            padding: 20px;
+            background-color: #0058A6;
+        }
+        .job-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            background-color: white;
+        }
+        .job-cell {
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .salary-info {
+            text-align: center;
+        }
+        .classes {
+            background-color:#003F75;
+            border: none;
+            
+        }
+
+        .class-table {
+         background-color: white;
+        }
+        .questions {
+            border: 2px solid black;
+            padding: 20px; 
+            background-color: aqua; 
+            border-radius: 10px; 
+            text-align: center;
+        }
+        .questions summary {
+            font-weight: bold;
+        }
+       .questions details {
+            margin: 10px 0;
+            background-color: white;
+        } .container {
+            text-align: center;
+        }
+        .feature-section {
+            text-align: center;
+            background-color:blanchedalmond;
+        }
+        .feature-section fieldset {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        .feature-section h3 {
+            color: #0058A6;
+        }
+        .slider-container {
+            position: relative;
+            width: 500px; /* Adjust the container width as needed */
+            overflow: hidden;
+            margin:0 auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            justify-content: center;
+        }
+
+        .slider img {
+            width: 900px; /* Adjust the image width as needed */
+            height: 450px;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+        details {
+            border: 1px solid black;
+            padding: 10px;
+           margin: 5px 0;
+          border-radius: 5px;
+         }
+       summary {
+            list-style: none;
+            cursor: pointer;
+        }
+       summary::before {
+            content: "+"; 
+           margin-right: 5px;
+        }
+       details[open] summary::before {
+         content: "-"; 
+        }
+        .footer {
+            background-color: #0058A6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+       
+        
+       
+
+        </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-info">
+            <img src="call logo.png" alt="Call Logo">
+            08069878321
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:hello@thetapacademy.com">
+                <img src="mail logo.jpg" alt="Mail Logo">
+            </a>hello@thetapacademy.com
+            <a href="https://www.youtube.com/tapacademy">
+                <img src="utube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://www.instagram.com/tapacademyonline/">
+                <img src="insta logo.png" alt="Instagram Logo">
+            </a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="main-logo">
+            <a href="https://thetapacademy.com/">
+                <img src="tap logo.png" alt="Tap Academy Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="student_review.html">Student Review</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="placement.html">Placement</a>
+            <a href="contact.html">Contact Us</a>
+            <button>Try for Free</button>            
+        </nav>
+    </div>
+    
+    <table class="table-with-space">
+        <tr>
+            <td>
+                <h1>Full Stack Web Development
+                </h1>
+                <p>Tap Academy’s full stack web developer course is designed <br> using AR and has industry required skills which <br>
+                    will make you job ready. Our full stack <br> web developer course also comes with an additional
+                     incentive <br> 
+                     of providing placements as you learn the course, double treat for your eyes? Yes.                    </p>
+            </td>
+            <td>
+                <img src="rohith sir img.png" alt="">
+            </td>
+        </tr>
+    </table>
+    <center>
+        <img src="courseeee1.png" alt="" height="500" width="650">
+    </center>
+    <h1 align="center">Who are Full Stack Developers?</h1>
+    <p align="center">
+        Full stack web developers can develop the entire web application and <br>
+         website from scratch. They have deep knowledge of two-three technologies and <br>
+         are comfortable with various other technologies used in software development, <br>
+         forming a T-shaped skill set.
+        <br>
+        With our full stack web developer course, you can be one too.
+    </p>
+    <table class="content">
+        <tr>
+             <td>
+                 <fieldset>
+                     <img src="frontend.jpg" alt="" height="100" width="150">
+                     <h3 align="center">Front End Development</h3>
+                     <p>Learn How to Design Webpages using HTML, CSS & Javascript & more.</p>
+                 </fieldset>
+             </td>
+             <td>
+                 <fieldset>
+                     <img src="backend.jpg" alt="" height="100" width="150">
+                     <h3 align="center">Backend Development</h3>
+                     <p>Learn How to build web apps using Java, Python, Hibernate & more...</p>
+ 
+                 </fieldset>
+             </td>
+             <td>
+                 <fieldset>
+                     <img src="database.jpg" alt="" height="100" width="150">
+                     <h3 align="center">Database</h3>
+                     <p>Learn How to configure databases using Sql, MySql & more...</p>
+                 </fieldset>
+             </td>
+        </tr>
+        </table>
+        <br><br>
+     <table>
+        <tr>
+            <td>
+                <img src="img1.jpg" alt="">
+            </td>
+            <td>
+                <img src="img2.jpg" alt="">
+            </td>
+            <td>
+                <img src="img3.jpg" alt="">
+            </td>
+            <td>
+                <img src="img4.jpg" alt="">
+            </td>
+            <td>
+                <img src="img5.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="p1.jpg" alt="">
+            </td>
+            <td><img src="p2.jpg" alt=""></td>
+            <td><img src="p3.jpg" alt=""></td>
+            <td><img src="p4.jpg" alt=""></td>
+            <td><img src="p5.jpg" alt=""></td>
+            
+        </tr>
+        <tr>
+            <td><img src="p6.jpg" alt=""></td>
+            <td><img src="p7.jpg" alt=""></td>
+            <td><img src="p8.jpg" alt=""></td>
+            <td><img src="p9.jpg" alt=""></td>
+            <td><img src="p10.jpg" alt=""></td>
+        </tr>
+    </table> 
+    <marquee behavior="" direction="left">
+        <img src="attend_image1.png" alt="">
+        <img src="Attend_image2.jpeg" alt="">
+        <img src="attend_image3.png" alt="">
+        <img src="attend_image4.jpeg" alt="">
+        <img src="attend_image5.jpeg" alt="">
+        <img src="attend_image6.png" alt="">
+
+    </marquee>
+    <fieldset class="job-details">
+        <table class="job-table">
+            <tr>
+                <td class="job-cell">
+                    <h2>Full-stack Java Developer</h2>
+                    <img src="fullstack javaDeveloper.png" alt="" height="250" width="350">
+                </td>
+                <br>
+                <td class="job-cell">
+                    <div class="salary-info">
+                        <h2>ANNUAL SALARY</h2>
+                        <p><strong>Maximum:</strong> Rs. 23.64 L</p>
+                        <p><strong>Average:</strong> Rs. 6.50 L</p>
+                        <p><strong>Minimum:</strong> Rs. 3.96 L</p>
+                    </div>
+                </td>
+                <br>
+                <td class="job-cell">
+                    <img src="Hiring companies.jpg" alt="">
+                    <h2>Hiring Companies</h2>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+<br>
+<fieldset class="classes">
+    <table class="class-table">
+        <tr>
+            <td align="left">
+                <img src="curriculm.jpg" alt="" height="80" width="100">
+                <p>Structure,Personalised <br>curriculm</p>                  
+            </td>
+            <td align="center">
+                <img src="careerMentorship.jpeg" alt=""  height="50" width="80">
+                <p>1:1 mentorship with career <br> coaches & technical experts</p>     
+            </td>
+            <td align="right">
+                <img src="live classes.jpg" alt=""  height="50" width="80">
+                <p>Live classes by industry <br>experts</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <img src="Hiring companies.jpg" alt=""  height="50" width="80">
+                <p> Hands-on experience <br>through case studies & <br>projects
+
+                </p>
+            </td>
+            <td align="center">
+                <img src="carrer support recruitment.jpeg" alt="" height="50" width="80">
+                <p>career support from in-built <br>recruitment team & alumni <br> network</p>
+            </td>
+            <td align="right">
+                <img src="mock interview.jpg" alt="" height="50" width="80">
+                <p>Mocks intervuews & regular <br> feedback</p>
+            </td>
+             </tr>
+        <tr>
+            <td align="left"> 
+                <img src="augmented reality training.png" alt=""  height="50" width="80">
+                <p>
+                    Augmented Reality Training
+                </p>
+            </td>
+            <td align="center">
+                <img src="instant doubt clarifiaction.png" alt="" height="50" width="80">
+                <p>
+                    Instant doubt clarification <br>channels
+                </p>
+           </td>
+            <td align="right">
+                <img src="a squad of enthusiastic.jpg" alt="" height="50" width="80">
+                <p>  squad of enthusiastic job <br>seekers</p>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+<br>
+    <fieldset class="questions">
+        <h2 align="center">Full Stack Course Curriculum</h2>
+        <details>
+            <summary>HTML</summary>
+            Hypertext Markup Language (HTML) is the standard markup language for
+             creating web pages and web applications. 
+
+             In this module, you are going to learn about
+              HTML tags, elements and attributes, Images, Tables, Links, Lists, Forms.
+        </details>
+    
+        <details>
+            <summary>CSS</summary>
+            CSS Basic styles
+
+            In this module, you would learn about Styling Images, 
+            Links, Tables, Borders, Margins, Lists, Padding, Cursors.
+        </details>
+    
+        <details>
+            <summary>Javascript</summary>
+            In this module you will get full information about 
+            how JavaScript provides dynamic interactivity on websites. 
+            We’ll show how to add some basic JavaScript functionalities to your page like printing a welcome message using Javascript, single and multi line comments using changing a CSS property using Javascript.
+
+
+        </details>
+        <details>
+            <summary>
+                 Bootstrap
+            </summary>
+            Bootstrap themes are packages of HTML, CSS and JavaScript code that provide styling, UI components
+             and page layouts for you to use in a web project. In essence, they are pre-built website templates for
+             you to adapt and build upon. In this module, you are going to learn about the Theming.
+        </details>
+        <details>
+            <summary>
+                Java SE
+            </summary>
+            This module helps you to understand the concepts of object-oriented programming.
+             The module covers introductory elements of object-oriented programming including inheritance,
+              polymorphism, encapsulation, abstraction, aggregation and advanced concepts like error handling,
+               file handling and multithreading, collection framework, maps.
+        </details>
+        <details>
+            <summary>
+                JDBC
+            </summary>
+            Implementing JDBC in the Spring Framework takes care of working with many low-level operations 
+            (opening/closing connections, executing SQL queries, etc.). JDBC in Spring has several classes
+             (several approaches) for interacting with the database. The most common of these is using the JDBC 
+             Template class. This is the base class that manages the processing of all events and database connections.
+             In this module, we would learn how to implement JDBC with the JdbcTemplate class in the Spring framework.
+        </details>
+        <details>
+            <summary>
+                JEE
+            </summary>
+            Overview of JEE Architecture, Introduction Remote Method Invocation, Sessions, 
+            Creating an Application page, Cookies, Authentication with Session Control, Handle errors
+             and exceptions in Servlets Application, Implement inter-Servlets Communication, Develop JSP 
+             Applications, Web Application Basics.
+        </details>
+        <details>
+            <summary>
+                Hibernate
+            </summary>
+            Hibernate Introduction, Relationship Mapping, Annotations, Transactions, Caching 
+            and Schema Generation, HQL and Native Queries, Criteria Queries.
+        </details>
+        <details>
+            <summary>
+                Springs
+            </summary>
+            Spring MVC, Dispatcher Servlet, Filters, Annotated Controllers, Form Handling.
+        </details>
+        <details>
+            <summary>
+                SQL
+            </summary>
+            MySQL is a relational database management system based on SQL – Structured
+             Query Language. The application is used for a wide range of purposes, including data warehousing,
+              e-commerce, and logging applications. The most common use for MySQL however is for the purpose 
+              of a web database.
+        </details>
+        <details>
+            <summary>
+                Aptitude
+            </summary>
+            Percentages, Averages, Ratios, Time & Work, Number System, Relations, Permutation & Combination,
+             Probability, Mixtures & Allegations, Clocks, Calendars, Ages.
+        </details>
+        <details>
+            <summary>
+                Personality Development
+            </summary>
+            This module helps you build all the necessary skills to stand out from the crowd,
+             This module includes Email writing, Online interview etiquette, Resume building, Linkedin profile curating,
+              Video resume, Mock interviews with regular feedback.
+        </details>
+    </fieldset>
+    <h1 align="center">Experience the <i>Augmented Reality</i> Tech Training</h1>
+    <p align="center">One of the Unique Features of Tap Academy is the use of Augmented Reality in our training.Through
+            this concepts are <br>visualized using cutting-edge animation to ensure n in-depth understanding of the concepts & experience the  
+           pure joy of <br>learning as well as upskilling your coding skills.
+    </p>
+    <table>

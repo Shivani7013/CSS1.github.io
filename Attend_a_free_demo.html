@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="tap logo 2.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #0058A6;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 30px;
+            height: 30px;
+        }
+        .contact-info {
+            display: flex;
+            align-items:left;
+        }
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            
+            margin-right: 6%;
+        
+        }
+        .contact-info a {
+            margin-left: 80%;
+            text-decoration: none;
+            color: white;
+            margin-right: 0%;
+        }
+        
+        .main-logo {
+            text-align: center;
+        }
+        .main-logo img {
+            width: 120px;
+            height: 80px;
+            margin-right: 80%;
+            margin-top: 3%;
+        }
+        .main-nav {
+            text-align: center;
+            background-color: white;
+            padding-bottom: -5%;
+           
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #0058A6;
+            margin: 0 10px;
+        }
+        .try-for-free-button {
+            background-color: #0058A6; 
+             color: white; 
+             padding: 10px 20px; 
+             border: none; 
+             text-decoration: none; 
+             font-size: 16px; 
+             cursor: pointer; 
+           }
+
+          .try-for-free-button:hover {
+                  background-color: #003F75;           
+          }
+          .content {
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start;
+          border: 2px solid black;
+          height: 100%;
+          width: 98%;
+        }
+
+       .content section {
+           flex: 1; 
+            padding: 0 10px; 
+           text-align: left; 
+         }
+         .content section a
+         {
+            margin-right: 20px;
+         }
+
+        .content aside {
+             flex: 1; 
+             text-align: right; 
+             height: 350px;
+             width:350px
+
+         }
+        .content a{
+            text-decoration: none;
+        }
+        .content h1 {
+            color: #005b41;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+            .modal-content {
+            background-color: white;
+            width: 80%;
+            max-width: 400px;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #0058A6;
+        }
+
+        td {
+            width: 35%;
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        img {
+            height: 70px;
+            width: 100px;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 0;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+        }
+
+       .marquee img {
+            display: inline-block;
+            margin-right: 20px; 
+            animation: marquee 10s linear infinite; 
+            width:25%;
+            height:15%; 
+            }
+
+        @keyframes marquee {
+         0% {
+             transform: translateX(100%);
+            }
+        100% {
+               transform: translateX(-100%);
+             }
+            }
+          details {
+            border: 1px solid black;
+            padding: 10px;
+           margin: 5px 0;
+          border-radius: 5px;
+         }
+       summary {
+            list-style: none;
+            cursor: pointer;
+        }
+       summary::before {
+            content: "+"; 
+           margin-right: 5px;
+        }
+       details[open] summary::before {
+         content: "-"; 
+        }
+        .job-details {
+            border: 2px solid #0058A6; 
+            padding: 20px;
+            background-color: #0058A6;
+        }
+        .job-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            background-color: white;
+        }
+        .job-cell {
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .salary-info {
+            text-align: center;
+        }
+        .questions {
+            border: 2px solid black;
+            padding: 20px; 
+            background-color: aqua; 
+            border-radius: 10px; 
+        }
+        .questions summary {
+            font-weight: bold;
+        }
+       .questions details {
+            margin: 10px 0;
+            background-color: white;
+        }
+        .container {
+            text-align: center;
+        }
+        .feature-section {
+            text-align: center;
+            background-color:blanchedalmond;
+        }
+        .feature-section fieldset {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+        .feature-section h3 {
+            color: #0058A6;
+        }
+        .slider-container {
+            position: relative;
+            width: 500px; /* Adjust the container width as needed */
+            overflow: hidden;
+            margin:0 auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            justify-content: center;
+        }
+
+        .slider img {
+            width: 900px; /* Adjust the image width as needed */
+            height: 450px;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+        .featuree-section fieldset
+        {
+            background-color: white;
+            
+        }
+        .classes {
+            background-color:#003F75;
+            border: none; /* Removes the border if needed */
+        }
+
+        .class-table {
+         background-color: white;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="contact-info">
+                <img src="call logo.png" alt="Call Logo">
+                08069878321
+            </div>
+            <div class="contact-icons">
+                <a href="mailto:hello@thetapacademy.com">
+                    <img src="mail logo.jpg" alt="Mail Logo">
+                </a>hello@thetapacademy.com
+                <a href="https://www.youtube.com/tapacademy">
+                    <img src="utube.png" alt="YouTube Logo">
+                </a>
+                <a href="https://www.instagram.com/tapacademyonline/">
+                    <img src="insta logo.png" alt="Instagram Logo">
+                </a>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="main-logo">
+                <a href="https://thetapacademy.com/">
+                    <img src="tap logo.png" alt="Tap Academy Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="student_review.html">Student Review</a>
+                <a href="Blogs.html">Blogs</a>
+                <a href="placement.html">Placement</a>
+                <a href="contact.html">Contact Us</a>
+                <button class="try-for-free-button">Try for Free</button>  
+            </nav>
+        </div>
+        <div class="content">       
+             <section>
+            <h2>Master in Full Stack Development & get</h2>
+            <p>Learn and build a complete web app from scratch using
+                 popular tools & technologies: Java, Springs, Hibernate, HTML, CSS, Javascript, Bootstrap, SQL.</p>
+            <p>Rating: 4.8 (4749 Students) ★★★★☆ 4.5/5</p>
+            <img src="online &offline.jpg" alt="" height="40" width="40">Online & Offline Classes <br>
+            <img src="crm-certifications-and-training.png" alt="" height="50" width="60">Certification Course <br>
+            <img src="placement_imageeee.jpg" alt="" height="50" width="60">Unlimited Placements <br><br>
+            <button id="openModalButton">Register to attend 5-days free demo Classes <br></button>
+            <br>
+        </section>
+        <aside>
+           <iframe title="vimeo-player" src="https://player.vimeo.com/video/724375777?h=3ceae9e81b" width="480" height="380" frameborder="0"    allowfullscreen></iframe>     
+         </aside>
+        <br>
+        
+        <br>
+        <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <form action="#" method="post">
+                <h2>Fill in Your Details</h2>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                <label for="whatsapp">Whatsapp Number:</label><br>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter your Whatsapp Number" required><br><br>
+                <label for="yearOfPassing">Year of Passing:</label><br>
+                    <select id="yearOfPassing" name="yearOfPassing">
+                       <option value="2019">2019</option>
+                       <option value="2020">2020</option>
+                       <option value="2021">2021</option>
+                       <option value="2022">2022</option>
+                       <option value="2023">2023</option>
+                    </select><br><br>
+                <label>Mode of Training:</label><br>
+                <input type="radio" id="online" name="mode" value="online">
+                <label for="online">Online</label><br>
+                <input type="radio" id="offline" name="mode" value="offline">
+                <label for="offline">Offline</label><br><br>
+                <input type="submit" value="REGISTER FOR THE TRAINING">
+            </form>
+            
+                <input type="submit" value="Submit">
+            </form>
+            <button id="closeModalButton">Close</button>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        const openModalButton = document.getElementById("openModalButton");
+        const closeModalButton = document.getElementById("closeModalButton");
+        const popupModal = document.getElementById("popupModal");
+
+        openModalButton.addEventListener("click", function () {
+            popupModal.style.display = "block";
+        });
+
+        closeModalButton.addEventListener("click", function () {
+            popupModal.style.display = "none";
+        });
+    </script>
+     <br> 
+    <table>
+       <tr>
+            <td>
+                <fieldset>
+                    <img src="frontend.jpg" alt="" height="70" width="100">
+                    <h3 align="center">Front End Development</h3>
+                    <p>Learn How to Design Webpages using HTML, CSS & Javascript & more.</p>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <img src="backend.jpg" alt="" height="70" width="100">
+                    <h3 align="center">Backend Development</h3>
+                    <p>Learn How to build web apps using Java, Python, Hibernate & more...</p>
+
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <img src="database.jpg" alt="" height="70" width="100">
+                    <h3 align="center">Database</h3>
+                    <p>Learn How to configure databases using Sql, MySql & more...</p>
+                </fieldset>
+            </td>
+       </tr>
+       </table>
+       <section id="student-transformation" class="section">
+        <div class="container">
+            <h1 class="section-title">Tap Academy Students <i>Transformation</i></h1>
+            <p>Our complete online training has made students learn to code anytime, anywhere, enhance their coding skills, and get placed in various Companies. Here are our few students placed at various companies:</p>
+            <br>
+            <div class="marquee">
+                    <img src="img1.jpg" alt="">
+                    <img src="img2.jpg" alt="">
+                    <img src="img3.jpg" alt="">
+                    <img src="img4.jpg" alt="">
+                    <img src="img5.jpg" alt="">
+            </div>
+            <br>
+        </div>
+    </section> 
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <h2 size="4">Full Stack Development Course</h2>
+                        <p>Rating: 4.8 (4749 Students) ★★★★☆ 4.5/5</p><br>
+                        <p align="center">Full Stack Development: Learn & Build web apps <br><br>
+                            from scratch & host it so millions of users over the <br><br>
+                             internet can access your application like E-commerce, Social media,
+                              OTT platforms, etc.</p><br>
+                        <button><a href="#">REGISTER NOW</a></button>
+                    </fieldset>
+                </td>
+                
+                <td class="featuree-section">
+                    <fieldset>
+                        <img src="feature1.svg" alt="" height="90" width="160">
+                        <p align=center>500 Hours of Quality <br> Training
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <img src="feature2.svg" alt="" height="90" width="160">
+                        <p align="center">50 hours of LIVE mentoring and <br>doubt clarification sessions
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <img src="feature3.svg" alt="" height="90" width="160">
+                        <p align="center">350+ Coding Questions & <br>Discussion Forum
+                        </p>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <img src="feature4.svg" alt="" height="85" width="150">
+                        <p align="center">Aptitude & Spoken English <br>Classes</p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <img src="feature5.svg" alt="" height="80" width="150">
+                        <p align="center">24/7 LMS access with Interview <br> preparation & Placement assistance</p>
+                    </fieldset><br>
+                    <fieldset>
+                        <img src="feature6.png" alt="" height="80" width="150">
+                        <p align="center">Online & Offline Classes</p>
+                    </fieldset>
+                </td>
+        
+            </tr>
+        </table>
+        <br>
+        <div class="marquee">
+            <img src="attend_image1.png" alt="" >
+            <img src="Attend_image2.jpeg" alt="">
+            <img src="attend_image3.png" alt="">
+            <img src="attend_image4.jpeg" alt="">
+            <img src="attend_image5.jpeg" alt="">
+            <img src="attend_image6.png" alt="">
+        </div>
+        <br>
+        <fieldset class="job-details">
+            <table class="job-table">
+                <tr>
+                    <td class="job-cell">
+                        <h2>Full-stack Java Developer</h2>
+                        <img src="fullstack javaDeveloper.png" alt="" height="250" width="350">
+                    </td>
+                    <br>
+                    <td class="job-cell">
+                        <div class="salary-info">
+                            <h2>ANNUAL SALARY</h2>
+                            <p><strong>Maximum:</strong> Rs. 23.64 L</p>
+                            <p><strong>Average:</strong> Rs. 6.50 L</p>
+                            <p><strong>Minimum:</strong> Rs. 3.96 L</p>
+                        </div>
+                    </td>
+                    <br>
+                    <td class="job-cell">
+                        <img src="Hiring companies.jpg" alt="">
+                        <h2>Hiring Companies</h2>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    
+    <br>
+    
